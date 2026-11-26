@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "id": "kos-workbench",
+  "name": "KOS 工作台",
+  "description": "组织卡片、阅读资料并在白板上思考，跨设备接续使用。",
+  "version": "0.5.0",
+  "releaseNotes": "新增白板资料预览、分区整体移动和 AI 卡片操作；审核可对照原稿与修改稿。AI 操作新增普通任务权限。",
+  "minCindyVersion": "0.1.125",
+  "kind": "chip",
+  "launch": "resident",
+  "library": true,
+  "agent": { "tasks": true },
+  "entry": "main.js",
+  "mainView": { "title": "KOS", "icon": "chart-column", "html": "index.html" },
+  "network": { "hosts": ["example.workers.dev"] },
+  "showTaskPreferences": false
+}

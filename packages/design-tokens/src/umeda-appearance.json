@@ -1,0 +1,2623 @@
+{
+  "$description": "个人 Umeda 外观配置正本。active 选择方案；绑定引用 DTCG Token，数值与新 Token 均在本文件或现有设计源维护。original 不覆盖现有默认。修改后运行 design-tokens generate。",
+  "$extensions": {
+    "com.umeda.appearance": {
+      "active": "editorial",
+      "schemes": {
+        "original": {
+          "brandStyle": "illustrated",
+          "desktop": {},
+          "mobile": {}
+        },
+        "minimal": {
+          "brandStyle": "typographic",
+          "desktop": {
+            "colors": {
+              "light": {
+                "surface": "semantic.umeda.surface.light",
+                "text-primary": "semantic.umeda.ink.light"
+              },
+              "dark": {
+                "surface": "semantic.umeda.surface.dark",
+                "text-primary": "semantic.umeda.ink.dark"
+              }
+            },
+            "foundations": {
+              "app-font-ui-default": "semantic.foundations.app-font-ui-default",
+              "space-4": "semantic.foundations.space-4",
+              "radius": "semantic.defaults.radius.light"
+            },
+            "fontSizes": {
+              "uiSize": "semantic.foundations.app-ui-font-size",
+              "codeSize": "semantic.foundations.app-code-font-size"
+            }
+          },
+          "mobile": {
+            "colors": {
+              "light": {
+                "surface": "semantic.umeda.surface.light",
+                "textPrimary": "semantic.umeda.ink.light"
+              },
+              "dark": {
+                "surface": "semantic.umeda.surface.dark",
+                "textPrimary": "semantic.umeda.ink.dark"
+              }
+            },
+            "spacing": {
+              "lg": "semantic.foundations.space-4"
+            },
+            "radius": {
+              "container": "semantic.foundations.radius-xl"
+            },
+            "typeScale": {
+              "body": "semantic.foundations.text-base"
+            },
+            "lineHeight": {
+              "body": "semantic.umeda.body-line-height"
+            },
+            "motionDuration": {
+              "fast": "semantic.foundations.motion-fast"
+            },
+            "fontFamily": "semantic.umeda.system-font"
+          }
+        },
+        "editorial": {
+          "brandStyle": "illustrated",
+          "desktop": {
+            "colors": {
+              "light": {
+                "surface": "semantic.umeda.editorial.hex-f0eee7",
+                "surface-elevated": "semantic.umeda.editorial.hex-f8f6f4",
+                "surface-elevated-soft": "semantic.umeda.editorial.hex-f1eee9",
+                "surface-card-ivory": "semantic.umeda.editorial.hex-f8f6f4",
+                "surface-chip": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "surface-chip-alt": "semantic.umeda.editorial.hex-f1eee9",
+                "surface-hover": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "surface-hover-soft": "semantic.umeda.editorial.rgba-e2dbce-0_28",
+                "surface-on-card": "semantic.umeda.editorial.hex-f8f6f4",
+                "switch-track-off": "semantic.umeda.editorial.hex-82796a",
+                "switch-track-on": "semantic.umeda.editorial.hex-6283ac",
+                "status-badge-fg": "semantic.umeda.editorial.hex-141413",
+                "border-default": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "text-primary": "semantic.umeda.editorial.hex-141413",
+                "text-primary-on-dark": "semantic.umeda.editorial.hex-f8f6f4",
+                "text-primary-emphasis": "semantic.umeda.editorial.hex-141413",
+                "text-primary-inv": "semantic.umeda.editorial.hex-f8f6f4",
+                "text-primary-body-strong": "semantic.umeda.editorial.hex-141413",
+                "text-secondary": "semantic.umeda.editorial.hex-68645d",
+                "text-secondary-cross": "semantic.umeda.editorial.hex-82796a",
+                "text-secondary-mid": "semantic.umeda.editorial.hex-423c31",
+                "text-tertiary": "semantic.umeda.editorial.hex-82796a",
+                "text-tertiary-stone": "semantic.umeda.editorial.hex-68645d",
+                "text-tertiary-mid": "semantic.umeda.editorial.hex-423c31",
+                "text-disabled": "semantic.umeda.editorial.hex-aba495",
+                "text-disabled-tertiary": "semantic.umeda.editorial.hex-82796a",
+                "accent-cta-bg": "semantic.umeda.editorial.hex-4a6586",
+                "accent-cta-bg-pure": "semantic.umeda.editorial.hex-4a6586",
+                "accent-emphasis": "semantic.umeda.editorial.hex-4a6586",
+                "accent-soft": "semantic.umeda.editorial.hex-283648",
+                "accent-hover": "semantic.umeda.editorial.hex-384c65",
+                "accent-pure-cta-fg": "semantic.umeda.editorial.hex-f8f6f4",
+                "accent": "semantic.umeda.editorial.triplet-e2dbce-0_42",
+                "agent-actions-rail": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "ask-checkbox-border": "semantic.umeda.editorial.hex-423c31",
+                "ask-option-list-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "background": "semantic.umeda.editorial.triplet-f0eee7",
+                "chat-input-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "chat-input-border-focus": "semantic.umeda.editorial.rgba-759ac8-0_45",
+                "chat-input-chip-border": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "chat-input-text": "semantic.umeda.editorial.hex-141413",
+                "color-primary": "semantic.umeda.editorial.hex-141413",
+                "caret-accent": "semantic.umeda.editorial.hex-6283ac",
+                "confirm-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "confirm-btn-primary-bg": "semantic.umeda.editorial.hex-4a6586",
+                "confirm-btn-primary-text": "semantic.umeda.editorial.hex-f8f6f4",
+                "confirm-btn-secondary-border": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "confirm-btn-secondary-hover": "semantic.umeda.editorial.rgba-e2dbce-0_50",
+                "confirm-btn-secondary-text": "semantic.umeda.editorial.hex-141413",
+                "confirm-title": "semantic.umeda.editorial.hex-141413",
+                "file-chip-bg": "semantic.umeda.editorial.rgba-d1cabc-0_90",
+                "file-remove-bg": "semantic.umeda.editorial.hex-423c31",
+                "info-700": "semantic.umeda.editorial.hex-4a6586",
+                "model-trigger-hover": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "model-item-hover": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "msg-link": "semantic.umeda.editorial.hex-4a6586",
+                "msg-scrollbar-hover": "semantic.umeda.editorial.rgba-d1cabc-0_90",
+                "msg-user-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "muted": "semantic.umeda.editorial.triplet-e2dbce-0_42",
+                "muted-foreground": "semantic.umeda.editorial.triplet-68645d",
+                "perm-auto-selected-text": "semantic.umeda.editorial.hex-4a6586",
+                "perm-allow-btn-bg": "semantic.umeda.editorial.hex-4a6586",
+                "perm-allow-btn-text": "semantic.umeda.editorial.hex-f8f6f4",
+                "perm-allow-kbd-bg": "semantic.umeda.editorial.rgba-f8f6f4-0_16",
+                "perm-allow-kbd-border": "semantic.umeda.editorial.rgba-f8f6f4-0_30",
+                "perm-code-bg": "semantic.umeda.editorial.hex-f1eee9",
+                "perm-item-selected-bg": "semantic.umeda.editorial.rgba-d1cabc-0_78",
+                "plan-outline-active-bg": "semantic.umeda.editorial.rgba-d1cabc-0_78",
+                "plan-toolbar-btn-hover-bg": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "popover": "semantic.umeda.editorial.triplet-f8f6f4",
+                "primary-foreground": "semantic.umeda.editorial.triplet-f8f6f4",
+                "search-match-fg": "semantic.umeda.editorial.triplet-141413",
+                "secondary": "semantic.umeda.editorial.triplet-e2dbce-0_42",
+                "settings-btn-primary-text": "semantic.umeda.editorial.hex-f8f6f4",
+                "settings-btn-secondary-hover-bg": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "text-placeholder": "semantic.umeda.editorial.hex-aba495",
+                "settings-integration-avatar-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "settings-logout-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "settings-menu-bg-hover": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "settings-menu-bg-selected": "semantic.umeda.editorial.rgba-d1cabc-0_78",
+                "settings-source-link": "semantic.umeda.editorial.hex-4a6586",
+                "settings-theme-auto-dark": "semantic.umeda.editorial.hex-141413",
+                "sidebar-action-icon": "semantic.umeda.editorial.triplet-82796a",
+                "cmd-palette-item-meta": "semantic.umeda.editorial.hex-68645d",
+                "sidebar-item-active-foreground": "semantic.umeda.editorial.hex-141413",
+                "sidebar-item-active": "semantic.umeda.editorial.triplet-d8d2c5",
+                "splash-bg": "semantic.umeda.editorial.triplet-f0eee7",
+                "splash-text": "semantic.umeda.editorial.triplet-68645d",
+                "splash-text-destructive": "semantic.umeda.editorial.triplet-141413",
+                "splash-text-muted": "semantic.umeda.editorial.triplet-82796a",
+                "titlebar-icon": "semantic.umeda.editorial.triplet-68645d",
+                "tooltip-bg": "semantic.umeda.editorial.hex-423c31",
+                "tooltip-text": "semantic.umeda.editorial.hex-f8f6f4",
+                "update-btn-border": "semantic.umeda.editorial.hex-4a6586",
+                "update-btn-bg": "semantic.umeda.editorial.hex-4a6586",
+                "update-btn-text": "semantic.umeda.editorial.hex-f8f6f4",
+                "accent-foreground": "semantic.umeda.editorial.triplet-141413",
+                "panel-bg": "semantic.umeda.editorial.hex-f0eee7",
+                "primary": "semantic.umeda.editorial.triplet-4a6586",
+                "ring": "semantic.umeda.editorial.triplet-759ac8-0_45",
+                "settings-theme-auto-light": "semantic.umeda.editorial.hex-f0eee7",
+                "foreground": "semantic.umeda.editorial.triplet-141413",
+                "border": "semantic.umeda.editorial.triplet-5e574a-0_18",
+                "input": "semantic.umeda.editorial.triplet-5e574a-0_18",
+                "secondary-foreground": "semantic.umeda.editorial.triplet-141413",
+                "popover-foreground": "semantic.umeda.editorial.triplet-141413",
+                "titlebar": "semantic.umeda.editorial.triplet-f0eee7",
+                "titlebar-border": "semantic.umeda.editorial.triplet-5e574a-0_18",
+                "titlebar-button-hover": "semantic.umeda.editorial.triplet-e2dbce-0_42",
+                "titlebar-control-hover": "semantic.umeda.editorial.triplet-e2dbce-0_42",
+                "sidebar": "semantic.umeda.editorial.triplet-f0eee7",
+                "sidebar-border": "semantic.umeda.editorial.triplet-5e574a-0_18",
+                "sidebar-item-hover": "semantic.umeda.editorial.triplet-e2dbce-0_42",
+                "sidebar-search-bg": "semantic.umeda.editorial.triplet-f0eee7",
+                "sidebar-search-input-bg": "semantic.umeda.editorial.rgba-f8f6f4-0_55",
+                "sidebar-muted": "semantic.umeda.editorial.triplet-68645d",
+                "surface-translucent-main": "semantic.umeda.editorial.hex-f0eee7",
+                "surface-translucent-overlay": "semantic.umeda.editorial.rgba-f8f6f4-0_90",
+                "composer-pill-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "composer-pill-icon": "semantic.umeda.editorial.hex-141413",
+                "send-btn-bg": "semantic.umeda.editorial.hex-4a6586",
+                "send-btn-icon": "semantic.umeda.editorial.hex-f8f6f4",
+                "send-btn-disabled-bg": "semantic.umeda.editorial.hex-d1cabc",
+                "send-btn-disabled-icon": "semantic.umeda.editorial.hex-f8f6f4",
+                "ask-header-chip-bg": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "create-agent-control-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "create-agent-control-border": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "create-agent-control-icon": "semantic.umeda.editorial.hex-141413",
+                "create-agent-control-text": "semantic.umeda.editorial.hex-141413",
+                "create-agent-quick-card-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "create-agent-quick-card-bg-hover": "semantic.umeda.editorial.rgba-e2dbce-0_42",
+                "create-agent-quick-card-border": "semantic.umeda.editorial.rgba-5e574a-0_18",
+                "create-agent-quick-card-icon": "semantic.umeda.editorial.hex-141413",
+                "create-agent-quick-card-icon-bg": "semantic.umeda.editorial.hex-f0eee7",
+                "create-agent-quick-card-text": "semantic.umeda.editorial.hex-141413",
+                "create-agent-segment-inactive-text": "semantic.umeda.editorial.hex-82796a",
+                "create-agent-segment-track-bg": "semantic.umeda.editorial.hex-f0eee7",
+                "create-agent-send-disabled-bg": "semantic.umeda.editorial.hex-f0eee7",
+                "create-agent-send-disabled-icon": "semantic.umeda.editorial.hex-aba495",
+                "md-table-bg": "semantic.umeda.editorial.rgba-f1eee9-0_55",
+                "settings-integration-avatar-border": "semantic.umeda.editorial.hex-e2dbce",
+                "sidebar-list-muted": "semantic.umeda.editorial.hex-82796a",
+                "sidebar-nav-text": "semantic.umeda.editorial.hex-141413",
+                "sidebar-user-card-bg-hover": "semantic.umeda.editorial.rgba-e2dbce-0_50",
+                "sidebar-user-card-border": "semantic.umeda.editorial.rgba-d1cabc-0_90",
+                "sidebar-user-card-text": "semantic.umeda.editorial.hex-141413",
+                "completion-badge-fg": "semantic.umeda.editorial.hex-141413",
+                "create-agent-control-bg-pressed": "semantic.umeda.editorial.rgba-d1cabc-0_78",
+                "create-agent-send-icon": "semantic.umeda.editorial.hex-f8f6f4",
+                "slider-track": "semantic.umeda.editorial.hex-aba495",
+                "slider-fill": "semantic.umeda.editorial.hex-6283ac",
+                "slider-thumb": "semantic.umeda.editorial.hex-f8f6f4",
+                "segmented-selected-bg": "semantic.umeda.editorial.hex-f8f6f4",
+                "segmented-selected-border": "semantic.umeda.editorial.hex-e2dbce",
+                "segmented-option-fg": "semantic.umeda.editorial.hex-68645d",
+                "segmented-hover-bg": "semantic.umeda.editorial.hex-eae6dd",
+                "search-match-bg": "semantic.umeda.editorial.triplet-ffcb3d",
+                "search-match-active-bg": "semantic.umeda.editorial.triplet-f5961a"
+              },
+              "dark": {
+                "surface": "semantic.umeda.editorial.hex-141413",
+                "surface-elevated": "semantic.umeda.editorial.hex-212120",
+                "surface-elevated-soft": "semantic.umeda.editorial.hex-1d1d1b",
+                "surface-card-ivory": "semantic.umeda.editorial.hex-212120",
+                "surface-chip": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "surface-chip-alt": "semantic.umeda.editorial.hex-1d1d1b",
+                "surface-hover": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "surface-hover-soft": "semantic.umeda.editorial.rgba-f0eee7-0_04",
+                "surface-on-card": "semantic.umeda.editorial.hex-141413",
+                "switch-track-off": "semantic.umeda.editorial.hex-82796a",
+                "switch-track-on": "semantic.umeda.editorial.hex-6283ac",
+                "status-badge-fg": "semantic.umeda.editorial.hex-141413",
+                "border-default": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "text-primary": "semantic.umeda.editorial.hex-f1eee9",
+                "text-primary-on-dark": "semantic.umeda.editorial.hex-f8f6f4",
+                "text-primary-emphasis": "semantic.umeda.editorial.hex-f1eee9",
+                "text-primary-inv": "semantic.umeda.editorial.hex-141413",
+                "text-primary-body-strong": "semantic.umeda.editorial.hex-f1eee9",
+                "text-secondary": "semantic.umeda.editorial.hex-aba495",
+                "text-secondary-cross": "semantic.umeda.editorial.hex-978f80",
+                "text-secondary-mid": "semantic.umeda.editorial.hex-d1cabc",
+                "text-tertiary": "semantic.umeda.editorial.hex-978f80",
+                "text-tertiary-stone": "semantic.umeda.editorial.hex-aba495",
+                "text-tertiary-mid": "semantic.umeda.editorial.hex-d1cabc",
+                "text-disabled": "semantic.umeda.editorial.hex-82796a",
+                "text-disabled-tertiary": "semantic.umeda.editorial.hex-978f80",
+                "accent-cta-bg": "semantic.umeda.editorial.hex-9ab2d0",
+                "accent-cta-bg-pure": "semantic.umeda.editorial.hex-9ab2d0",
+                "accent-emphasis": "semantic.umeda.editorial.hex-9ab2d0",
+                "accent-soft": "semantic.umeda.editorial.hex-6283ac",
+                "accent-hover": "semantic.umeda.editorial.hex-759ac8",
+                "accent-pure-cta-fg": "semantic.umeda.editorial.hex-141413",
+                "accent": "semantic.umeda.editorial.triplet-f0eee7-0_06",
+                "agent-actions-rail": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "ask-checkbox-border": "semantic.umeda.editorial.hex-d1cabc",
+                "ask-option-list-bg": "semantic.umeda.editorial.hex-282826",
+                "background": "semantic.umeda.editorial.triplet-141413",
+                "chat-input-bg": "semantic.umeda.editorial.hex-212120",
+                "chat-input-border-focus": "semantic.umeda.editorial.rgba-9ab2d0-0_45",
+                "chat-input-chip-border": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "chat-input-text": "semantic.umeda.editorial.hex-f1eee9",
+                "color-primary": "semantic.umeda.editorial.hex-f1eee9",
+                "caret-accent": "semantic.umeda.editorial.hex-9ab2d0",
+                "confirm-bg": "semantic.umeda.editorial.hex-212120",
+                "confirm-btn-primary-bg": "semantic.umeda.editorial.hex-9ab2d0",
+                "confirm-btn-primary-text": "semantic.umeda.editorial.hex-141413",
+                "confirm-btn-secondary-border": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "confirm-btn-secondary-hover": "semantic.umeda.editorial.rgba-f0eee7-0_08",
+                "confirm-btn-secondary-text": "semantic.umeda.editorial.hex-f1eee9",
+                "confirm-title": "semantic.umeda.editorial.hex-f1eee9",
+                "file-chip-bg": "semantic.umeda.editorial.rgba-f0eee7-0_13",
+                "file-remove-bg": "semantic.umeda.editorial.hex-d1cabc",
+                "info-700": "semantic.umeda.editorial.hex-9ab2d0",
+                "model-trigger-hover": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "model-item-hover": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "msg-link": "semantic.umeda.editorial.hex-9ab2d0",
+                "msg-scrollbar-hover": "semantic.umeda.editorial.rgba-f0eee7-0_13",
+                "msg-user-bg": "semantic.umeda.editorial.hex-212120",
+                "muted": "semantic.umeda.editorial.triplet-f0eee7-0_06",
+                "muted-foreground": "semantic.umeda.editorial.triplet-aba495",
+                "perm-auto-selected-text": "semantic.umeda.editorial.hex-9ab2d0",
+                "perm-allow-btn-bg": "semantic.umeda.editorial.hex-9ab2d0",
+                "perm-allow-btn-text": "semantic.umeda.editorial.hex-141413",
+                "perm-allow-kbd-bg": "semantic.umeda.editorial.rgba-000000-0_08",
+                "perm-allow-kbd-border": "semantic.umeda.editorial.rgba-000000-0_20",
+                "perm-code-bg": "semantic.umeda.editorial.hex-1a1918",
+                "perm-item-selected-bg": "semantic.umeda.editorial.rgba-f0eee7-0_14",
+                "plan-outline-active-bg": "semantic.umeda.editorial.rgba-f0eee7-0_14",
+                "plan-toolbar-btn-hover-bg": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "popover": "semantic.umeda.editorial.triplet-262524",
+                "primary-foreground": "semantic.umeda.editorial.triplet-141413",
+                "search-match-fg": "semantic.umeda.editorial.triplet-f1eee9",
+                "secondary": "semantic.umeda.editorial.triplet-f0eee7-0_06",
+                "settings-btn-primary-text": "semantic.umeda.editorial.hex-141413",
+                "settings-btn-secondary-hover-bg": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "text-placeholder": "semantic.umeda.editorial.hex-82796a",
+                "settings-integration-avatar-bg": "semantic.umeda.editorial.hex-1d1d1b",
+                "settings-logout-bg": "semantic.umeda.editorial.hex-212120",
+                "settings-menu-bg-hover": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "settings-menu-bg-selected": "semantic.umeda.editorial.rgba-f0eee7-0_14",
+                "settings-source-link": "semantic.umeda.editorial.hex-9ab2d0",
+                "settings-theme-auto-dark": "semantic.umeda.editorial.hex-141413",
+                "sidebar-action-icon": "semantic.umeda.editorial.triplet-978f80",
+                "cmd-palette-item-meta": "semantic.umeda.editorial.hex-aba495",
+                "sidebar-item-active-foreground": "semantic.umeda.editorial.hex-f1eee9",
+                "sidebar-item-active": "semantic.umeda.editorial.triplet-333331",
+                "splash-bg": "semantic.umeda.editorial.triplet-141413",
+                "splash-text": "semantic.umeda.editorial.triplet-aba495",
+                "splash-text-destructive": "semantic.umeda.editorial.triplet-f1eee9",
+                "splash-text-muted": "semantic.umeda.editorial.triplet-978f80",
+                "titlebar-icon": "semantic.umeda.editorial.triplet-aba495",
+                "tooltip-bg": "semantic.umeda.editorial.hex-2a2a28",
+                "tooltip-text": "semantic.umeda.editorial.hex-f8f6f4",
+                "update-btn-border": "semantic.umeda.editorial.hex-9ab2d0",
+                "update-btn-bg": "semantic.umeda.editorial.hex-9ab2d0",
+                "update-btn-text": "semantic.umeda.editorial.hex-141413",
+                "accent-foreground": "semantic.umeda.editorial.triplet-f1eee9",
+                "panel-bg": "semantic.umeda.editorial.hex-141413",
+                "primary": "semantic.umeda.editorial.triplet-9ab2d0",
+                "ring": "semantic.umeda.editorial.triplet-9ab2d0-0_45",
+                "settings-theme-auto-light": "semantic.umeda.editorial.hex-f0eee7",
+                "foreground": "semantic.umeda.editorial.triplet-f1eee9",
+                "border": "semantic.umeda.editorial.triplet-f0eee7-0_10",
+                "input": "semantic.umeda.editorial.triplet-f0eee7-0_10",
+                "secondary-foreground": "semantic.umeda.editorial.triplet-f1eee9",
+                "popover-foreground": "semantic.umeda.editorial.triplet-f1eee9",
+                "titlebar": "semantic.umeda.editorial.triplet-141413",
+                "titlebar-border": "semantic.umeda.editorial.triplet-f0eee7-0_10",
+                "titlebar-button-hover": "semantic.umeda.editorial.triplet-f0eee7-0_06",
+                "titlebar-control-hover": "semantic.umeda.editorial.triplet-f0eee7-0_06",
+                "sidebar": "semantic.umeda.editorial.triplet-141413",
+                "sidebar-border": "semantic.umeda.editorial.triplet-f0eee7-0_10",
+                "sidebar-item-hover": "semantic.umeda.editorial.triplet-f0eee7-0_09",
+                "sidebar-search-bg": "semantic.umeda.editorial.triplet-141413",
+                "sidebar-search-input-bg": "semantic.umeda.editorial.rgba-000000-0_25",
+                "sidebar-muted": "semantic.umeda.editorial.triplet-aba495",
+                "surface-translucent-main": "semantic.umeda.editorial.hex-141413",
+                "surface-translucent-overlay": "semantic.umeda.editorial.rgba-141413-0_80",
+                "composer-pill-bg": "semantic.umeda.editorial.hex-282826",
+                "composer-pill-icon": "semantic.umeda.editorial.hex-f1eee9",
+                "send-btn-bg": "semantic.umeda.editorial.hex-9ab2d0",
+                "send-btn-icon": "semantic.umeda.editorial.hex-141413",
+                "send-btn-disabled-bg": "semantic.umeda.editorial.hex-333331",
+                "send-btn-disabled-icon": "semantic.umeda.editorial.hex-4f4f4c",
+                "ask-header-chip-bg": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "create-agent-control-bg": "semantic.umeda.editorial.hex-282826",
+                "create-agent-control-border": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "create-agent-control-icon": "semantic.umeda.editorial.hex-f1eee9",
+                "create-agent-control-text": "semantic.umeda.editorial.hex-f1eee9",
+                "create-agent-quick-card-bg": "semantic.umeda.editorial.hex-212120",
+                "create-agent-quick-card-bg-hover": "semantic.umeda.editorial.rgba-f0eee7-0_06",
+                "create-agent-quick-card-border": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "create-agent-quick-card-icon": "semantic.umeda.editorial.hex-f1eee9",
+                "create-agent-quick-card-icon-bg": "semantic.umeda.editorial.hex-141413",
+                "create-agent-quick-card-text": "semantic.umeda.editorial.hex-f1eee9",
+                "create-agent-segment-inactive-text": "semantic.umeda.editorial.hex-978f80",
+                "create-agent-segment-track-bg": "semantic.umeda.editorial.hex-141413",
+                "create-agent-send-disabled-bg": "semantic.umeda.editorial.hex-333331",
+                "create-agent-send-disabled-icon": "semantic.umeda.editorial.hex-82796a",
+                "md-table-bg": "semantic.umeda.editorial.rgba-141413-0_55",
+                "settings-integration-avatar-border": "semantic.umeda.editorial.rgba-f0eee7-0_08",
+                "sidebar-list-muted": "semantic.umeda.editorial.hex-978f80",
+                "sidebar-nav-text": "semantic.umeda.editorial.hex-f1eee9",
+                "sidebar-user-card-bg-hover": "semantic.umeda.editorial.rgba-f0eee7-0_10",
+                "sidebar-user-card-border": "semantic.umeda.editorial.rgba-f0eee7-0_13",
+                "sidebar-user-card-text": "semantic.umeda.editorial.hex-f1eee9",
+                "completion-badge-fg": "semantic.umeda.editorial.hex-141413",
+                "create-agent-control-bg-pressed": "semantic.umeda.editorial.rgba-f0eee7-0_14",
+                "create-agent-send-icon": "semantic.umeda.editorial.hex-141413",
+                "slider-track": "semantic.umeda.editorial.hex-5e574a",
+                "slider-fill": "semantic.umeda.editorial.hex-9ab2d0",
+                "slider-thumb": "semantic.umeda.editorial.hex-f8f6f4",
+                "segmented-selected-bg": "semantic.umeda.editorial.hex-333331",
+                "segmented-selected-border": "semantic.umeda.editorial.hex-3e3d3b",
+                "segmented-option-fg": "semantic.umeda.editorial.hex-aba495",
+                "segmented-hover-bg": "semantic.umeda.editorial.hex-2a2a28",
+                "search-match-bg": "semantic.umeda.editorial.triplet-5a4419",
+                "search-match-active-bg": "semantic.umeda.editorial.triplet-ffc14d"
+              }
+            }
+          },
+          "mobile": {
+            "colors": {
+              "light": {
+                "surface": "semantic.umeda.editorial.hex-f0eee7",
+                "surfaceElevated": "semantic.umeda.editorial.hex-f8f6f4",
+                "surfaceTranslucent": "semantic.umeda.editorial.rgba-f0eee7-0_78",
+                "surfaceTranslucentSidebar": "semantic.umeda.editorial.rgba-f0eee7-0_90",
+                "chatHeaderSurface": "semantic.umeda.editorial.rgba-f0eee7-0_90",
+                "chatHeaderDivider": "semantic.umeda.editorial.hex-d1cabc",
+                "surfaceGlassPanel": "semantic.umeda.editorial.hex-f8f6f4",
+                "surfaceListRow": "semantic.umeda.editorial.hex-f8f6f4",
+                "surfaceListExpanded": "semantic.umeda.editorial.hex-e2dbce",
+                "chatCodeSurface": "semantic.umeda.editorial.hex-f1eee9",
+                "chatCodeBorder": "semantic.umeda.editorial.hex-d1cabc",
+                "chatInlineCodeText": "semantic.umeda.editorial.hex-5e574a",
+                "inputCaret": "semantic.umeda.editorial.hex-6283ac",
+                "sheetSurface": "semantic.umeda.editorial.rgba-f0eee7-0_96",
+                "sheetActionSurface": "semantic.umeda.editorial.hex-f8f6f4",
+                "sheetActionBorder": "semantic.umeda.editorial.hex-d1cabc",
+                "surfaceChip": "semantic.umeda.editorial.hex-e2dbce",
+                "border": "semantic.umeda.editorial.hex-d1cabc",
+                "borderTranslucent": "semantic.umeda.editorial.rgba-d1cabc-0_62",
+                "borderStrong": "semantic.umeda.editorial.hex-82796a",
+                "textPrimary": "semantic.umeda.editorial.hex-141413",
+                "groupMentionText": "semantic.umeda.editorial.hex-4a6586",
+                "textSecondary": "semantic.umeda.editorial.hex-423c31",
+                "textTertiary": "semantic.umeda.editorial.hex-5e574a",
+                "textPlaceholder": "semantic.umeda.editorial.hex-82796a",
+                "cta": "semantic.umeda.editorial.hex-4a6586",
+                "ctaText": "semantic.umeda.editorial.hex-f8f6f4",
+                "permAutoAccent": "semantic.umeda.editorial.hex-6283ac",
+                "homeListFab": "semantic.umeda.editorial.hex-4a6586",
+                "errorText": "semantic.umeda.editorial.hex-141413",
+                "errorBorder": "semantic.umeda.editorial.hex-82796a",
+                "sharedTaskConfirmForeground": "semantic.umeda.editorial.hex-f8f6f4"
+              },
+              "dark": {
+                "surface": "semantic.umeda.editorial.hex-141413",
+                "surfaceElevated": "semantic.umeda.editorial.hex-212120",
+                "surfaceTranslucent": "semantic.umeda.editorial.rgba-141413-0_78",
+                "surfaceTranslucentSidebar": "semantic.umeda.editorial.rgba-141413-0_85",
+                "chatHeaderSurface": "semantic.umeda.editorial.rgba-141413-0_80",
+                "chatHeaderDivider": "semantic.umeda.editorial.rgba-f0eee7-0_08",
+                "surfaceGlassPanel": "semantic.umeda.editorial.hex-282826",
+                "surfaceListRow": "semantic.umeda.editorial.hex-212120",
+                "surfaceListExpanded": "semantic.umeda.editorial.hex-141413",
+                "chatCodeSurface": "semantic.umeda.editorial.hex-1a1918",
+                "chatCodeBorder": "semantic.umeda.editorial.hex-3e3d3b",
+                "chatInlineCodeText": "semantic.umeda.editorial.hex-978f80",
+                "inputCaret": "semantic.umeda.editorial.hex-9ab2d0",
+                "sheetSurface": "semantic.umeda.editorial.rgba-212120-0_96",
+                "sheetActionSurface": "semantic.umeda.editorial.hex-282826",
+                "sheetActionBorder": "semantic.umeda.editorial.hex-3e3d3b",
+                "surfaceChip": "semantic.umeda.editorial.hex-282826",
+                "border": "semantic.umeda.editorial.hex-3e3d3b",
+                "borderTranslucent": "semantic.umeda.editorial.rgba-3e3d3b-0_62",
+                "borderStrong": "semantic.umeda.editorial.hex-82796a",
+                "textPrimary": "semantic.umeda.editorial.hex-f1eee9",
+                "groupMentionText": "semantic.umeda.editorial.hex-9ab2d0",
+                "textSecondary": "semantic.umeda.editorial.hex-d1cabc",
+                "textTertiary": "semantic.umeda.editorial.hex-978f80",
+                "textPlaceholder": "semantic.umeda.editorial.hex-7a7366",
+                "cta": "semantic.umeda.editorial.hex-9ab2d0",
+                "ctaText": "semantic.umeda.editorial.hex-141413",
+                "permAutoAccent": "semantic.umeda.editorial.hex-6283ac",
+                "homeListFab": "semantic.umeda.editorial.hex-9ab2d0",
+                "errorText": "semantic.umeda.editorial.hex-f1eee9",
+                "errorBorder": "semantic.umeda.editorial.hex-82796a",
+                "sharedTaskConfirmForeground": "semantic.umeda.editorial.hex-141413"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "reference": {
+    "umeda": {
+      "surface": {
+        "light": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": false,
+              "alpha": false
+            }
+          }
+        },
+        "dark": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08,
+              0.08,
+              0.08
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": false,
+              "alpha": false
+            }
+          }
+        }
+      },
+      "ink": {
+        "light": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.12,
+              0.12,
+              0.12
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": false,
+              "alpha": false
+            }
+          }
+        },
+        "dark": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.94,
+              0.94,
+              0.94
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": false,
+              "alpha": false
+            }
+          }
+        }
+      },
+      "body-line-height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 22,
+          "unit": "px"
+        }
+      },
+      "system-font": {
+        "$type": "fontFamily",
+        "$value": "System"
+      },
+      "editorial": {
+        "hex-f0eee7": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-141413": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.078431,
+              0.078431,
+              0.07451
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-f8f6f4": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.972549,
+              0.964706,
+              0.956863
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-212120": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.129412,
+              0.129412,
+              0.12549
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-f1eee9": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.945098,
+              0.933333,
+              0.913725
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-1d1d1b": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.113725,
+              0.113725,
+              0.105882
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "rgba-e2dbce-0_42": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.886275,
+              0.858824,
+              0.807843
+            ],
+            "alpha": 0.42
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_06": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.06
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-e2dbce-0_28": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.886275,
+              0.858824,
+              0.807843
+            ],
+            "alpha": 0.28
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_04": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.04
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "hex-82796a": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.509804,
+              0.47451,
+              0.415686
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-6283ac": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.384314,
+              0.513725,
+              0.67451
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "rgba-5e574a-0_18": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.368627,
+              0.341176,
+              0.290196
+            ],
+            "alpha": 0.18
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_10": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "hex-68645d": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.407843,
+              0.392157,
+              0.364706
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-aba495": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.670588,
+              0.643137,
+              0.584314
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-978f80": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.592157,
+              0.560784,
+              0.501961
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-423c31": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.258824,
+              0.235294,
+              0.192157
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-d1cabc": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.819608,
+              0.792157,
+              0.737255
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-4a6586": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.290196,
+              0.396078,
+              0.52549
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-9ab2d0": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.603922,
+              0.698039,
+              0.815686
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-283648": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.156863,
+              0.211765,
+              0.282353
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-384c65": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.219608,
+              0.298039,
+              0.396078
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-759ac8": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.458824,
+              0.603922,
+              0.784314
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "triplet-e2dbce-0_42": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              39,
+              25.6,
+              84.7
+            ],
+            "alpha": 0.42
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "triplet-f0eee7-0_06": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              46.7,
+              23.1,
+              92.4
+            ],
+            "alpha": 0.06
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "hex-282826": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.156863,
+              0.156863,
+              0.14902
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "triplet-f0eee7": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              46.7,
+              23.1,
+              92.4
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-141413": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              60,
+              2.6,
+              7.6
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "rgba-759ac8-0_45": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.458824,
+              0.603922,
+              0.784314
+            ],
+            "alpha": 0.45
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-9ab2d0-0_45": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.603922,
+              0.698039,
+              0.815686
+            ],
+            "alpha": 0.45
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-e2dbce-0_50": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.886275,
+              0.858824,
+              0.807843
+            ],
+            "alpha": 0.5
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_08": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.08
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-d1cabc-0_90": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.819608,
+              0.792157,
+              0.737255
+            ],
+            "alpha": 0.9
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_13": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.13
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "triplet-68645d": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              38.2,
+              5.6,
+              38.6
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-aba495": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              40.9,
+              11.6,
+              62.7
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "rgba-f8f6f4-0_16": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.972549,
+              0.964706,
+              0.956863
+            ],
+            "alpha": 0.16
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-000000-0_08": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 0.08
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f8f6f4-0_30": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.972549,
+              0.964706,
+              0.956863
+            ],
+            "alpha": 0.3
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-000000-0_20": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 0.2
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "hex-1a1918": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.101961,
+              0.098039,
+              0.094118
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "rgba-d1cabc-0_78": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.819608,
+              0.792157,
+              0.737255
+            ],
+            "alpha": 0.78
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_14": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.14
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "triplet-f8f6f4": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              30,
+              22.2,
+              96.5
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-262524": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              30,
+              2.7,
+              14.5
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-f1eee9": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              37.5,
+              22.2,
+              92.9
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-82796a": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              37.5,
+              10.2,
+              46.3
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-978f80": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              39.1,
+              10,
+              54.7
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-d8d2c5": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              41.1,
+              19.6,
+              81
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-333331": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              60,
+              2,
+              19.6
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "hex-2a2a28": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.164706,
+              0.164706,
+              0.156863
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "triplet-4a6586": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              213,
+              28.8,
+              40.8
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-9ab2d0": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              213.3,
+              36.5,
+              71
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-759ac8-0_45": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              213.3,
+              43,
+              62.2
+            ],
+            "alpha": 0.45
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "triplet-9ab2d0-0_45": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              213.3,
+              36.5,
+              71
+            ],
+            "alpha": 0.45
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "triplet-5e574a-0_18": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              39,
+              11.9,
+              32.9
+            ],
+            "alpha": 0.18
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "triplet-f0eee7-0_10": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              46.7,
+              23.1,
+              92.4
+            ],
+            "alpha": 0.1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "triplet-f0eee7-0_09": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              46.7,
+              23.1,
+              92.4
+            ],
+            "alpha": 0.09
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ],
+              "alphaPrecision": 2
+            }
+          }
+        },
+        "rgba-f8f6f4-0_55": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.972549,
+              0.964706,
+              0.956863
+            ],
+            "alpha": 0.55
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-000000-0_25": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 0.25
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f8f6f4-0_90": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.972549,
+              0.964706,
+              0.956863
+            ],
+            "alpha": 0.9
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-141413-0_80": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.078431,
+              0.078431,
+              0.07451
+            ],
+            "alpha": 0.8
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "hex-333331": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2,
+              0.2,
+              0.192157
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-4f4f4c": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.309804,
+              0.309804,
+              0.298039
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "rgba-f1eee9-0_55": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.945098,
+              0.933333,
+              0.913725
+            ],
+            "alpha": 0.55
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-141413-0_55": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.078431,
+              0.078431,
+              0.07451
+            ],
+            "alpha": 0.55
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "hex-e2dbce": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.886275,
+              0.858824,
+              0.807843
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-5e574a": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.368627,
+              0.341176,
+              0.290196
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-3e3d3b": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.243137,
+              0.239216,
+              0.231373
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "hex-eae6dd": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.917647,
+              0.901961,
+              0.866667
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        },
+        "triplet-ffcb3d": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              43.9,
+              100,
+              62
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-5a4419": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              39.7,
+              56.5,
+              22.5
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-f5961a": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              34,
+              91.6,
+              53.1
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "triplet-ffc14d": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "hsl",
+            "components": [
+              39.1,
+              100,
+              65.1
+            ]
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "triplet",
+              "precision": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "rgba-f0eee7-0_78": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.78
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-141413-0_78": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.078431,
+              0.078431,
+              0.07451
+            ],
+            "alpha": 0.78
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_90": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.9
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-141413-0_85": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.078431,
+              0.078431,
+              0.07451
+            ],
+            "alpha": 0.85
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-f0eee7-0_96": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.941176,
+              0.933333,
+              0.905882
+            ],
+            "alpha": 0.96
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-212120-0_96": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.129412,
+              0.129412,
+              0.12549
+            ],
+            "alpha": 0.96
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-d1cabc-0_62": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.819608,
+              0.792157,
+              0.737255
+            ],
+            "alpha": 0.62
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "rgba-3e3d3b-0_62": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.243137,
+              0.239216,
+              0.231373
+            ],
+            "alpha": 0.62
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "rgb",
+              "uppercase": false,
+              "alpha": true,
+              "precision": 2
+            }
+          }
+        },
+        "hex-7a7366": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.478431,
+              0.45098,
+              0.4
+            ],
+            "alpha": 1
+          },
+          "$extensions": {
+            "com.cindy.desktop": {
+              "format": "hex",
+              "uppercase": true,
+              "alpha": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "umeda": {
+      "surface": {
+        "light": {
+          "$type": "color",
+          "$value": "{reference.umeda.surface.light}"
+        },
+        "dark": {
+          "$type": "color",
+          "$value": "{reference.umeda.surface.dark}"
+        }
+      },
+      "ink": {
+        "light": {
+          "$type": "color",
+          "$value": "{reference.umeda.ink.light}"
+        },
+        "dark": {
+          "$type": "color",
+          "$value": "{reference.umeda.ink.dark}"
+        }
+      },
+      "body-line-height": {
+        "$type": "dimension",
+        "$value": "{reference.umeda.body-line-height}"
+      },
+      "system-font": {
+        "$type": "fontFamily",
+        "$value": "{reference.umeda.system-font}"
+      },
+      "editorial": {
+        "hex-f0eee7": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-f0eee7}"
+        },
+        "hex-141413": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-141413}"
+        },
+        "hex-f8f6f4": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-f8f6f4}"
+        },
+        "hex-212120": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-212120}"
+        },
+        "hex-f1eee9": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-f1eee9}"
+        },
+        "hex-1d1d1b": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-1d1d1b}"
+        },
+        "rgba-e2dbce-0_42": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-e2dbce-0_42}"
+        },
+        "rgba-f0eee7-0_06": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_06}"
+        },
+        "rgba-e2dbce-0_28": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-e2dbce-0_28}"
+        },
+        "rgba-f0eee7-0_04": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_04}"
+        },
+        "hex-82796a": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-82796a}"
+        },
+        "hex-6283ac": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-6283ac}"
+        },
+        "rgba-5e574a-0_18": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-5e574a-0_18}"
+        },
+        "rgba-f0eee7-0_10": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_10}"
+        },
+        "hex-68645d": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-68645d}"
+        },
+        "hex-aba495": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-aba495}"
+        },
+        "hex-978f80": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-978f80}"
+        },
+        "hex-423c31": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-423c31}"
+        },
+        "hex-d1cabc": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-d1cabc}"
+        },
+        "hex-4a6586": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-4a6586}"
+        },
+        "hex-9ab2d0": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-9ab2d0}"
+        },
+        "hex-283648": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-283648}"
+        },
+        "hex-384c65": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-384c65}"
+        },
+        "hex-759ac8": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-759ac8}"
+        },
+        "triplet-e2dbce-0_42": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-e2dbce-0_42}"
+        },
+        "triplet-f0eee7-0_06": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f0eee7-0_06}"
+        },
+        "hex-282826": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-282826}"
+        },
+        "triplet-f0eee7": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f0eee7}"
+        },
+        "triplet-141413": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-141413}"
+        },
+        "rgba-759ac8-0_45": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-759ac8-0_45}"
+        },
+        "rgba-9ab2d0-0_45": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-9ab2d0-0_45}"
+        },
+        "rgba-e2dbce-0_50": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-e2dbce-0_50}"
+        },
+        "rgba-f0eee7-0_08": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_08}"
+        },
+        "rgba-d1cabc-0_90": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-d1cabc-0_90}"
+        },
+        "rgba-f0eee7-0_13": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_13}"
+        },
+        "triplet-68645d": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-68645d}"
+        },
+        "triplet-aba495": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-aba495}"
+        },
+        "rgba-f8f6f4-0_16": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f8f6f4-0_16}"
+        },
+        "rgba-000000-0_08": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-000000-0_08}"
+        },
+        "rgba-f8f6f4-0_30": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f8f6f4-0_30}"
+        },
+        "rgba-000000-0_20": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-000000-0_20}"
+        },
+        "hex-1a1918": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-1a1918}"
+        },
+        "rgba-d1cabc-0_78": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-d1cabc-0_78}"
+        },
+        "rgba-f0eee7-0_14": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_14}"
+        },
+        "triplet-f8f6f4": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f8f6f4}"
+        },
+        "triplet-262524": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-262524}"
+        },
+        "triplet-f1eee9": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f1eee9}"
+        },
+        "triplet-82796a": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-82796a}"
+        },
+        "triplet-978f80": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-978f80}"
+        },
+        "triplet-d8d2c5": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-d8d2c5}"
+        },
+        "triplet-333331": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-333331}"
+        },
+        "hex-2a2a28": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-2a2a28}"
+        },
+        "triplet-4a6586": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-4a6586}"
+        },
+        "triplet-9ab2d0": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-9ab2d0}"
+        },
+        "triplet-759ac8-0_45": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-759ac8-0_45}"
+        },
+        "triplet-9ab2d0-0_45": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-9ab2d0-0_45}"
+        },
+        "triplet-5e574a-0_18": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-5e574a-0_18}"
+        },
+        "triplet-f0eee7-0_10": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f0eee7-0_10}"
+        },
+        "triplet-f0eee7-0_09": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f0eee7-0_09}"
+        },
+        "rgba-f8f6f4-0_55": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f8f6f4-0_55}"
+        },
+        "rgba-000000-0_25": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-000000-0_25}"
+        },
+        "rgba-f8f6f4-0_90": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f8f6f4-0_90}"
+        },
+        "rgba-141413-0_80": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-141413-0_80}"
+        },
+        "hex-333331": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-333331}"
+        },
+        "hex-4f4f4c": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-4f4f4c}"
+        },
+        "rgba-f1eee9-0_55": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f1eee9-0_55}"
+        },
+        "rgba-141413-0_55": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-141413-0_55}"
+        },
+        "hex-e2dbce": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-e2dbce}"
+        },
+        "hex-5e574a": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-5e574a}"
+        },
+        "hex-3e3d3b": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-3e3d3b}"
+        },
+        "hex-eae6dd": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-eae6dd}"
+        },
+        "triplet-ffcb3d": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-ffcb3d}"
+        },
+        "triplet-5a4419": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-5a4419}"
+        },
+        "triplet-f5961a": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-f5961a}"
+        },
+        "triplet-ffc14d": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.triplet-ffc14d}"
+        },
+        "rgba-f0eee7-0_78": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_78}"
+        },
+        "rgba-141413-0_78": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-141413-0_78}"
+        },
+        "rgba-f0eee7-0_90": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_90}"
+        },
+        "rgba-141413-0_85": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-141413-0_85}"
+        },
+        "rgba-f0eee7-0_96": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-f0eee7-0_96}"
+        },
+        "rgba-212120-0_96": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-212120-0_96}"
+        },
+        "rgba-d1cabc-0_62": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-d1cabc-0_62}"
+        },
+        "rgba-3e3d3b-0_62": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.rgba-3e3d3b-0_62}"
+        },
+        "hex-7a7366": {
+          "$type": "color",
+          "$value": "{reference.umeda.editorial.hex-7a7366}"
+        }
+      }
+    }
+  }
+}

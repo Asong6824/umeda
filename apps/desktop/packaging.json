@@ -1,0 +1,15 @@
+{
+  "displayName": "Umeda",
+  "executableNameByRegion": {
+    "cn": "Umeda",
+    "global": "Umeda",
+    "dev": "UmedaDev"
+  },
+  "linuxExecutableNameByRegion": {
+    "cn": "Cindy",
+    "global": "Cindy",
+    "dev": "CindyDev"
+  },
+  "artifactBasename": "umeda",
+  "product": "umeda-desktop"
+}

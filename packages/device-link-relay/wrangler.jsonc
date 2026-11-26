@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "umeda",
+  "main": "cloudflare/worker.ts",
+  "compatibility_date": "2026-11-14",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "keep_vars": true,
+  "vars": { "UMEDA_AUTH_MODE": "none" },
+  "r2_buckets": [{ "binding": "UMEDA_VAULT", "bucket_name": "umeda-vault" }],
+  "durable_objects": {
+    "bindings": [{ "name": "UMEDA_RELAY", "class_name": "UmedaRelay" }, { "name": "UMEDA_WORK", "class_name": "UmedaWork" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["UmedaRelay"] }, { "tag": "v2", "new_sqlite_classes": ["UmedaWork"] }],
+  "observability": { "enabled": false }
+}

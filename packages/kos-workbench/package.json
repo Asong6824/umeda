@@ -1,0 +1,38 @@
+{
+  "name": "@cindy/kos-workbench",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Portable KOS workbench: deterministic views and reading, independent of Obsidian and Agent runtimes.",
+  "exports": {
+    "./core": "./src/core/index.ts",
+    "./cards/provenance": "./src/cards/provenance.ts"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@cindy/device-link": "workspace:*",
+    "@noble/hashes": "1.8.0",
+    "@xyflow/react": "^12.12.1",
+    "dompurify": "3.4.12",
+    "epubjs": "0.3.93",
+    "marked": "16.4.2",
+    "pdfjs-dist": "5.7.284",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "yaml": "2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "esbuild": "^0.28.1",
+    "jszip": "3.10.1",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.4"
+  }
+}
